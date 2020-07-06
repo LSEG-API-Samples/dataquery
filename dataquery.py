@@ -872,6 +872,9 @@ class screener:
 
         def conditions(self, *value) -> 'express':
             if value is not None:
+                if type(value[0]) == tuple:
+                    value=value[0]
+                    
                 self._conditions = value
                 if (value is not None) and (len(value)>0):
                     conditions_ = []
