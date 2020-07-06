@@ -65,7 +65,7 @@ def GMEDIAN(groupby_field, value_field):
     Calculates the median value of a specific data item (value_field) on a per group basis that has been specified across a set of instruments.
     '''
     if (groupby_field is not None) and (len(groupby_field)>0) and (value_field is not None) and (len(value_field)>0):
-        values_ = 'GMEDIAN({}{})'.format(','.join(groupby_field,value_field))
+        values_ = 'GMEDIAN({}{})'.format(','.join([groupby_field,value_field]))
     else:
         values_=''    
     return values_
@@ -86,7 +86,7 @@ def GAVG(groupby_field, value_field):
     Calculates the average value of a specific data item (value_field) on a per group basis that has been specified across a set of instruments.
     '''
     if (groupby_field is not None) and (len(groupby_field)>0) and (value_field is not None) and (len(value_field)>0):
-        values_ = 'GAVG({})'.format(','.join(groupby_field,value_field))
+        values_ = 'GAVG({})'.format(','.join([groupby_field,value_field]))
     else:
         values_=''    
     return values_
@@ -108,7 +108,7 @@ def GSTD(groupby_field, value_field):
     Calculates the standard deviation of a specific data item (value_field) on a per-group basis that has been specified across a set of instruments.
     '''
     if (groupby_field is not None) and (len(groupby_field)>0) and (value_field is not None) and (len(value_field)>0):
-        values_ = 'GSTD({})'.format(','.join(groupby_field,value_field))
+        values_ = 'GSTD({})'.format(','.join([groupby_field,value_field]))
     else:
         values_=''    
     return values_    
@@ -130,7 +130,7 @@ def GMAX(groupby_field, value_field):
     Finds the Maximum (Largest) value of a data item (value_field) on a per-group basis across a set of instruments.
     '''
     if (groupby_field is not None) and (len(groupby_field)>0) and (value_field is not None) and (len(value_field)>0):
-        values_ = 'GMAX({})'.format(','.join(groupby_field,value_field))
+        values_ = 'GMAX({})'.format(','.join([groupby_field,value_field]))
     else:
         values_=''    
     return values_ 
@@ -152,7 +152,7 @@ def GMIN(groupby_field, value_field):
     Finds the Minimum (Smallest) value of a data item (value_field) on a per-group basis across a set of instruments.
     '''
     if (groupby_field is not None) and (len(groupby_field)>0) and (value_field is not None) and (len(value_field)>0):
-        values_ = 'GMIN({})'.format(','.join(groupby_field,value_field))
+        values_ = 'GMIN({})'.format(','.join([groupby_field,value_field]))
     else:
         values_=''    
     return values_ 
@@ -173,7 +173,7 @@ def GSUM(groupby_field, value_field):
     Calculates the Sum of a specific data item (value_field) on a per-group basis that has been specified across a set of instruments.
     '''
     if (groupby_field is not None) and (len(groupby_field)>0) and (value_field is not None) and (len(value_field)>0):
-        values_ = 'GSUM({})'.format(','.join(groupby_field,value_field))
+        values_ = 'GSUM({})'.format(','.join([groupby_field,value_field]))
     else:
         values_=''    
     return values_    
@@ -184,7 +184,7 @@ def GCOUNT(groupby_field, value_field):
     Calculates the Count (number of non null values) of a specific data item (value_field) on a per-group basis that has been specified across a set of instruments.
     '''
     if (groupby_field is not None) and (len(groupby_field)>0) and (value_field is not None) and (len(value_field)>0):
-        values_ = 'GCOUNT({})'.format(','.join(groupby_field,value_field))
+        values_ = 'GCOUNT({})'.format(','.join([groupby_field,value_field]))
     else:
         values_=''    
     return values_ 
