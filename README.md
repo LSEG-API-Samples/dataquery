@@ -1,5 +1,5 @@
 # dataquery
-The <b>dataquery.py</b> contains a syntax builder designed to assist LSEG Data Library for Python users with creating screening and data aggregation requests.
+The <b>dataquery.py</b> contains a syntax builder designed to assist LSEG Data Library for Python users with creating screening and data aggregation requests. You can access the full article from [LSEG Developer Community Website](https://developers.lseg.com/en/article-catalog/article/dataquery-a-syntax-builder-for-screening). 
 
 You can find several examples of using dataquery with LSEG Data Library for Python in the attached Jupyter notebook. In order to use it make sure to copy the Python file into the same directory as the examples notebook.
 
